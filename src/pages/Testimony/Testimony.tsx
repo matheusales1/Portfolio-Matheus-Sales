@@ -1,19 +1,21 @@
 import { useState } from 'react';
 import { PerfilComment } from '../../components/PerfilComment';
 import Teste from '../../assets/se7volei.jpeg';
+import Teste1 from '../../assets/mat.jfif';
 
 export const Testimony = () => {
     const depoimentos = [
         {
-            comment: `"Se o tamanho do seu slider está maior do que o esperado, pode ser devido às classes ou ao estilo CSS aplicado aos elementos dentro do slider. Verifique se há alguma classe que está configurando o tamanho dos elementos de forma inadequada."`
-            ,
-            imagePerfil: Teste, name: "Emily G Melo", job: "Social Media"
+            comment: `"Se o tamanho do seu slider está maior do que o esperado, pode ser devido às classes ou ao estilo CSS aplicado aos elementos dentro do slider. Verifique se há alguma classe que está configurando o tamanho dos elementos de forma inadequada."`,
+            imagePerfil: Teste,
+            name: "Emily G Melo",
+            job: "Social Media"
         },
         {
-            comment:
-                'pica de mel',
-            imagePerfil: Teste,
-            name: "Emily G Melo", job: "Social Media"
+            comment: 'pica de mel',
+            imagePerfil: Teste1,
+            name: "Emily G Melo",
+            job: "Social Media"
         },
     ];
 
@@ -24,7 +26,7 @@ export const Testimony = () => {
     };
 
     return (
-        <div className=" bg-slate-800 flex justify-center text-white">
+        <div className=" bg-slate-900 flex justify-center text-white">
             <div className="w-3/5 flex items-center flex-col mt-36 ">
                 <h1 className='text-3xl'>Depoimentos</h1>
                 <p className='mt-10 sm:text-2xl'>Pessoas com quem trabalhei disseram algumas coisas boas...</p>

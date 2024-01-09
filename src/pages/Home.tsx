@@ -17,8 +17,9 @@ export const Home = () => {
 
             <Projetos />
             <Conhecimentos />
-            <Contatos />
+
             <Testimony />
+            <Contatos />
             <Footer />
         </div>
     )

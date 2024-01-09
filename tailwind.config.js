@@ -10,13 +10,16 @@ export default {
         'page': 'url(/src/assets/7246.jpg)',
         'se7volei': 'url(/src/assets/se7volei.jpeg)',
         'pageServiços': 'url(/src/assets/bg-img-serviços.png)',
-        'pageMain': 'url(/src/assets/teste1.jpg)'
+        'pageMain': 'url(/src/assets/BGARREDONDADO.png)'
       },
       colors: {
-        Cinza: "#313131",
+        Cinza: "#384252",
         overlay: 'rgba(0, 0, 0, 0.8)',
 
       },
+      fontFamily: {
+        firaCode: ['Fira Code Light'] // Altere 'Fire Code' para o nome exato da sua fonte, se necessário
+      }
     },
   },
   plugins: [],

@@ -19,13 +19,13 @@ export const Footer = () => {
         <div className="bg-stone-700 py-8 flex justify-center">
             <div className="flex flex-col  items-center mt-20">
                 <h2 className="text-center text-lg font-bold mb-4 w-80">Vivendo, aprendendo e subindo de nível um dia de cada vez.</h2>
-                <div className="flex justify-center space-x-4 mt-10">
+                <div>
                     {redesSociais.map((redesSociais) => (
                         <RedesSociais linkUrl={redesSociais.link} imgUrl={redesSociais.img} />
                     ))}
                 </div>
                 <p className="mt-10">© 2024 Meu Portifolio. Todos direitos reservados | Matheus Sales.</p>
             </div>
-        </div>
+        </div >
     );
 };
