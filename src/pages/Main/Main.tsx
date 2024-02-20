@@ -11,14 +11,14 @@ import LogoMatheus from "../../assets/LOGO MATHEUS.png"
 
 export const Main = () => {
     const redesSociais = [
-        { link: "www.instagram.com", img: Linkedin },
+        { link: "www.instagram.com", img: Linkedin, },
         { link: "www.instagram.com", img: WhatsApp },
         { link: "www.instagram.com", img: Instagram },
         { link: "www.instagram.com", img: Discord },
     ];
     return (
         <div className="h-full w-full flex bg-pageMain bg-cover bg-center  ">
-            {/* Parte esquerda com texto */}
+
             <div className="w-1/2 h-screen text-center text-white flex flex-col items-center justify-center">
                 <div className=" text-left flex flex-col ">
                     <img className="mb-4 mt-12" src={LogoMatheus} alt="" />
@@ -37,6 +37,7 @@ export const Main = () => {
                     <img src={Perfil} alt="Foto" className="w-80 h-80 rounded-full" /> {/* Substitua o caminho pela localização da sua foto */}
                 </div>
             </div>
+
         </div>
 
     )

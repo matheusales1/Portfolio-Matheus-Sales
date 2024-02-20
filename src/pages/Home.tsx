@@ -1,6 +1,6 @@
 import { About } from "./About/About"
 import { Conhecimentos } from "./Conhecimentos/Conhecimentos"
-import { Contatos } from "./Contatos/Contatos"
+import { Contato } from "./Contato/Contato"
 import { Footer } from "./Footer/Footer"
 import { Header } from "./Header/Header"
 import { Main } from "./Main/Main"
@@ -14,12 +14,10 @@ export const Home = () => {
             <Header />
             <Main />
             <About />
-
             <Projetos />
             <Conhecimentos />
-
             <Testimony />
-            <Contatos />
+            <Contato />
             <Footer />
         </div>
     )

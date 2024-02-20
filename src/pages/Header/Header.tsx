@@ -16,13 +16,16 @@ export const Header = () => {
             <div className="flex items-center">
                 <img src={LogoIcone} alt="Logo" className="h-20 ml-40" /> {/* Substitua o caminho pela localização da sua logo */}
                 <header className="text-gray-50 font-bold">
+
                     {mostrarHeader && (
-                        <nav className="p-4">
-                            <a href="" className="m-4">INÍCIO</a>
-                            <a href="" className="m-4">SOBRE</a>
-                            <a href="" className="m-4">PROJETOS</a>
-                            <a href="" className="m-4 sm:mr-20">CONTATO</a>
-                        </nav>
+                        <div className=" ">
+                            <nav className="p-4">
+                                <a href="" className="m-4">INÍCIO</a>
+                                <a href="" className="m-4">SOBRE</a>
+                                <a href="" className="m-4">PROJETOS</a>
+                                <a href="" className="m-4 sm:mr-20">CONTATO</a>
+                            </nav>
+                        </div>
                     )}
                 </header>
             </div>

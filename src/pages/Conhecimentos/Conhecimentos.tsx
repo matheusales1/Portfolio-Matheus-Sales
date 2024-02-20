@@ -26,16 +26,16 @@ export const Conhecimentos = () => {
         { logo: GithubLogo, mensagem: "GitHub é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git." }
     ];
     const conhecimentosBackend = [
-        { logo: PhpLogo, mensagem: "HTML é uma Linguagem de marcação para construir páginas web." },
+        { logo: PhpLogo, mensagem: "" },
         {
-            logo: LaravelLogo, mensagem: `CSS é uma linguagem de folha de estilo composta por
-        "camadas", criado com o propósito de estilizar as páginas.` },
+            logo: LaravelLogo, mensagem: `Laravel é um framework PHP livre e open-source criado por Taylor B. Otwell para o desenvolvimento de sistemas web que utilizam o padrão MVC.`
+        },
     ];
 
     const [mensagem, setMensagem] = useState("Passe o cursor do mouse no card para ler");
     return (
         <div className="bg-slate-900 w-auto flex flex-wrap justify-center items-center gap-4 p-4 flex-col text-white">
-            <h1 className="text-3xl font-bold mb-10 mt-20 text-center text-white">Conhecimentos</h1>
+            <h1 className="text-5xl font-bold mb-10 mt-20 text-center text-white font-firaCode">Conhecimentos</h1>
             <div className="text-transparent sm:text-gray-500 sm:text-xl">{mensagem}</div>
             <div className="p-4 m-4 grid grid-cols-2   xl:grid-cols-7 md:grid-cols-3 bg-slate-950">
                 {linguagens.map((linguagem, index) => (

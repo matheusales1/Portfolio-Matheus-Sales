@@ -10,7 +10,8 @@ export default {
         'page': 'url(/src/assets/7246.jpg)',
         'se7volei': 'url(/src/assets/se7volei.jpeg)',
         'pageServiços': 'url(/src/assets/bg-img-serviços.png)',
-        'pageMain': 'url(/src/assets/BGARREDONDADO.png)'
+        'pageMain': 'url(/src/assets/BGARREDONDADO.png)',
+        'pageGit': 'url(/src/assets/background-branco.png)'
       },
       colors: {
         Cinza: "#384252",
@@ -18,7 +19,8 @@ export default {
 
       },
       fontFamily: {
-        firaCode: ['Fira Code Light'] // Altere 'Fire Code' para o nome exato da sua fonte, se necessário
+        firaCode: ['Fira Code Light'],
+        montserrat: ['Montserrat thin '] // Altere 'Fire Code' para o nome exato da sua fonte, se necessário
       }
     },
   },
