@@ -46,7 +46,7 @@ export const Conhecimentos = () => {
                         onMouseLeave={() => setMensagem("Passe o cursor do mouse no card para ler")} />
                 ))}
             </div>
-            <h1>Estudando com foco em back-end</h1>
+            <h1 className='text-xl'>Estudando com foco em back-end</h1>
             <div className="p-4 m-4 grid grid-cols-2 xl:grid-cols-2 md:grid-cols-3 bg-slate-950">
                 {/* Map para renderizar os ícones de conhecimentos em back-end */}
                 {conhecimentosBackend.map((conhecimento, index) => (
