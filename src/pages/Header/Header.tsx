@@ -1,33 +1,30 @@
 import { useState, useEffect } from "react";
-
 import LogoIcone from "../../assets/miconebranco.png";
 import LogoMatheus from "../../assets/ÍCONE MENU.png";
+import { Link } from "react-scroll";
+import { IoIosHome } from "react-icons/io";
+import { SiAboutdotme } from "react-icons/si";
+import { GrProjects } from "react-icons/gr";
+import { RiGitRepositoryCommitsFill } from "react-icons/ri";
+import { GiSkills } from "react-icons/gi";
 
-export const Header = () => {
+import { BsFillPeopleFill } from "react-icons/bs";
+import { RiContactsBook2Fill } from "react-icons/ri";
+
+const Header = () => {
     const [mostrarMenu, setMostrarMenu] = useState(false);
 
     const toggleMenu = () => {
         setMostrarMenu(!mostrarMenu);
     };
 
-    const scrollToSection = (id: string) => {
-        const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({ behavior: "smooth" });
-            if (window.innerWidth <= 768) {
-                toggleMenu(); // Fecha o menu apenas em dispositivos móveis
-            }
-        }
-    };
-
-    // Função para fechar o menu quando a largura da janela muda
-    const handleWindowResize = () => {
-        if (window.innerWidth > 768) {
-            setMostrarMenu(false);
-        }
-    };
-
     useEffect(() => {
+        const handleWindowResize = () => {
+            if (window.innerWidth > 768) {
+                setMostrarMenu(false);
+            }
+        };
+
         window.addEventListener("resize", handleWindowResize);
         return () => {
             window.removeEventListener("resize", handleWindowResize);
@@ -36,39 +33,37 @@ export const Header = () => {
 
     return (
         <div className="w-screen h-20 bg-slate-900 flex items-center justify-between fixed z-10 pl-20">
-            <div className="hidden sm:flex items-center justify-start w-full ">
+            <div className="hidden sm:flex items-center justify-start w-full">
                 <img src={LogoIcone} alt="Logo" className="h-20 ml-20 " />
-                <header className="text-white w-full ml-80">
-                    <div className="container flex justify-center items-center text-center">
-                        <nav className="p-4 flex font-firaCode">
-                            <a href="#inicio" className="mx-4" onClick={() => scrollToSection("inicio")}>Início</a>
-                            <a href="#sobre" className="mx-4" onClick={() => scrollToSection("sobre")}>Sobre</a>
-                            <a href="#projetos" className="mx-4" onClick={() => scrollToSection("projetos")}>Projetos</a>
-                            <a href="#repositorio" className="mx-4" onClick={() => scrollToSection("repositorio")}>Repositório</a>
-                            <a href="#habilidades" className="mx-4" onClick={() => scrollToSection("habilidades")}>Habilidades</a>
-                            <a href="#contato" className="mx-4 sm:mr-32" onClick={() => scrollToSection("contato")}>Contato</a>
-                        </nav>
-                    </div>
-                </header>
+                <div className="container text-white w-full ml-80 flex justify-center items-center text-center">
+                    <nav className="p-4 flex font-firaCode">
+                        <Link to="inicio" spy={true} smooth={true} offset={0} duration={500} className="mx-4 cursor-pointer">Início</Link>
+                        <Link to="sobre" spy={true} smooth={true} offset={-200} duration={500} className="mx-4 cursor-pointer">Sobre</Link>
+                        <Link to="projetos" spy={true} smooth={true} offset={0} duration={500} className="mx-4 cursor-pointer">Projetos</Link>
+                        <Link to="repositorio" spy={true} smooth={true} offset={0} duration={500} className="mx-4 cursor-pointer">Repositório</Link>
+                        <Link to="habilidades" spy={true} smooth={true} offset={-100} duration={500} className="mx-4 cursor-pointer">Habilidades</Link>
+                        <Link to="depoimentos" spy={true} smooth={true} offset={-100} duration={500} className="mx-4 cursor-pointer">Depoimentos</Link>
+                        <Link to="contato" spy={true} smooth={true} offset={10} duration={500} className="mx-4 sm:mr-32 cursor-pointer">Contato</Link>
+                    </nav>
+                </div>
             </div>
             <img
                 src={LogoMatheus}
                 alt="Ícone do Menu"
-                className="h-10 w-10 mr-4 block sm:hidden"
+                className="h-10 w-10 ml-auto mr-4 block sm:hidden"
                 onClick={toggleMenu}
             />
-            {/* Navbar modal para dispositivos móveis */}
             {mostrarMenu && (
-                <div className="fixed inset-0 bg-black bg-opacity-75 z-50 flex justify-end items-center">
-                    <div className="bg-slate-900  p-8 transform transition-transform ease-in-out duration-1000">
-                        <nav className="flex flex-col">
-                            <a href="#inicio" className="text-white text-lg mb-4" onClick={() => scrollToSection("inicio")}>Início</a>
-                            <a href="#sobre" className="text-white text-lg mb-4" onClick={() => scrollToSection("sobre")}>Sobre</a>
-                            <a href="#projetos" className="text-white text-lg mb-4" onClick={() => scrollToSection("projetos")}>Projetos</a>
-                            <a href="#repositorio" className="text-white text-lg mb-4" onClick={() => scrollToSection("repositorio")}>Repositório</a>
-                            <a href="#habilidades" className="text-white text-lg mb-4" onClick={() => scrollToSection("habilidades")}>Habilidades</a>
-                            <a href="#contato" className="text-white text-lg mb-4" onClick={() => scrollToSection("contato")}>Contato</a>
-                            <a href="#" onClick={toggleMenu} className="text-white text-lg mb-4">Fechar</a>
+                <div className="fixed top-1/3 right-0 max-h-screen overflow-auto flex justify-end items-center transition-opacity duration-500 ease-in-out">
+                    <div className="bg-black opacity-90 p-6">
+                        <nav className="flex flex-col ">
+                            <Link to="inicio" spy={true} smooth={true} offset={0} duration={500} className="text-white text-lg mb-4"><IoIosHome /></Link>
+                            <Link to="sobre" spy={true} smooth={true} offset={-200} duration={500} className="text-white text-lg mb-4"> <SiAboutdotme /> </Link>
+                            <Link to="projetos" spy={true} smooth={true} offset={0} duration={500} className="text-white text-lg mb-4"> <GrProjects /> </Link>
+                            <Link to="repositorio" spy={true} smooth={true} offset={0} duration={500} className="text-white text-lg mb-4"> <RiGitRepositoryCommitsFill /> </Link>
+                            <Link to="habilidades" spy={true} smooth={true} offset={-100} duration={500} className="text-white text-lg mb-4"><GiSkills /> </Link>
+                            <Link to="depoimentos" spy={true} smooth={true} offset={-100} duration={500} className="text-white text-lg mb-4"> <BsFillPeopleFill /></Link>
+                            <Link to="contato" spy={true} smooth={true} offset={10} duration={500} className="text-white text-lg "><RiContactsBook2Fill /></Link>
                         </nav>
                     </div>
                 </div>
@@ -76,3 +71,5 @@ export const Header = () => {
         </div>
     );
 };
+
+export default Header;

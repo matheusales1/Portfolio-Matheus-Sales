@@ -16,7 +16,7 @@ export const Main = () => {
         { link: "www.instagram.com", img: Discord },
     ];
     return (
-        <div id="sobre" className="h-full w-full flex bg-pageMain bg-cover bg-center">
+        <div id="inicio" className="h-full w-full flex bg-pageMain bg-cover bg-center">
             <div className="sm:w-1/2 h-screen text-center text-white flex flex-col items-center justify-center">
                 <div className=" sm:text-left text-center flex flex-col ">
                     <img className="sm:mb-4 mt-12 m-10 sm:m-0" src={LogoMatheus} alt="" />
@@ -35,7 +35,6 @@ export const Main = () => {
                     <img src={Perfil} alt="Foto" className="w-80 h-80 rounded-full" /> {/* Substitua o caminho pela localização da sua foto */}
                 </div>
             </div>
-
         </div>
 
     )

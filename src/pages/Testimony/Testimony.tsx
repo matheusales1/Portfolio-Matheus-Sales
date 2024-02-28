@@ -18,10 +18,10 @@ export const Testimony = () => {
     ];
 
     return (
-        <div className="bg-slate-900 flex justify-center text-white">
+        <div id="depoimentos" className="bg-slate-900 flex justify-center text-white">
             <div className="w-10/12 flex flex-col items-center mt-36">
                 <h1 className='text-5xl font-firaCode'>Depoimentos</h1>
-                <p className='mt-10 sm:text-2xl'>Pessoas com quem trabalhei disseram algumas coisas boas...</p>
+                <p className='mt-10 sm:text-2xl text-center'>Pessoas com quem trabalhei disseram algumas coisas boas...</p>
 
                 {/* Container grid para os depoimentos */}
                 <div className="grid sm:grid-cols-2 md:grid-cols-2 sm:gap-14 justify-center ">

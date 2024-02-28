@@ -2,7 +2,6 @@ interface UnitConhecimentosProps {
     Logo?: string;
     onMouseEnter?: () => void;
     onMouseLeave?: () => void;
-
 }
 
 export const UnitConhecimentos: React.FC<UnitConhecimentosProps> = ({ Logo, onMouseEnter, onMouseLeave }) => {
