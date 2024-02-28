@@ -4,7 +4,6 @@ import Linkedin from "../../assets/RedesSociaisTwo/icons8-linkedin.svg";
 import WhatsApp from "../../assets/RedesSociaisTwo/icons8-whatsapp-21.svg";
 import Instagram from "../../assets/RedesSociaisTwo/icons8-instagram-21.svg";
 
-
 export const Contato = () => {
     const redesSociais = [
         { link: "linkedin.com/in/matheusales", img: Linkedin, text: "/matheusales" },
@@ -30,7 +29,6 @@ export const Contato = () => {
                     <div className="sm:ml-10 text-left ">
                         <h2 className="text-4xl font-bold mb-10 font-firaCode">Adicione nas redes</h2>
                         {redesSociais.map((redesSociais, index) => (
-
                             <RedesSociais key={index} linkUrl={redesSociais.link} imgUrl={redesSociais.img} textTeste={redesSociais.text} mostrarNome={true} />
                         ))}
                     </div>

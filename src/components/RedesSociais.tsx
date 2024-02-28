@@ -21,7 +21,7 @@ export const RedesSociais: React.FC<RedesSociaisProps> = ({ linkUrl, imgUrl, mos
                 className="w-12 h-12 rounded-full p-2 transition duration-300 ease-in-out transform hover:scale-110 hover:bg-black"
             />
             {mostrarNome && (
-                <span className="ml-2 text-xl text">{textTeste}</span>
+                <span className="ml-2 text-xl font-firaCode">{textTeste}</span>
             )}
         </Link>
     );
