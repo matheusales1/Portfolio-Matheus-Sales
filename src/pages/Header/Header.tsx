@@ -7,7 +7,6 @@ import { SiAboutdotme } from "react-icons/si";
 import { GrProjects } from "react-icons/gr";
 import { RiGitRepositoryCommitsFill } from "react-icons/ri";
 import { GiSkills } from "react-icons/gi";
-
 import { BsFillPeopleFill } from "react-icons/bs";
 import { RiContactsBook2Fill } from "react-icons/ri";
 
@@ -20,7 +19,7 @@ const Header = () => {
 
     useEffect(() => {
         const handleWindowResize = () => {
-            if (window.innerWidth > 768) {
+            if (window.innerWidth > 1024) {
                 setMostrarMenu(false);
             }
         };
@@ -34,25 +33,28 @@ const Header = () => {
     return (
         <div className="w-screen h-20 bg-slate-900 flex items-center justify-between fixed z-10 pl-20">
             <div className="hidden sm:flex items-center justify-start w-full">
-                <img src={LogoIcone} alt="Logo" className="h-20 ml-20 " />
-                <div className="container text-white w-full ml-80 flex justify-center items-center text-center">
-                    <nav className="p-4 flex font-firaCode">
+                <img src={LogoIcone} alt="Logo" className="h-20 ml-20 sm:ml-0" />
+                <div className="container text-white w-full ml-80 xl:flex justify-center items-center text-center hidden">
+                    <nav className="p-4 flex font-firaCode sm:mr-96">
                         <Link to="inicio" spy={true} smooth={true} offset={0} duration={500} className="mx-4 cursor-pointer">Início</Link>
                         <Link to="sobre" spy={true} smooth={true} offset={-200} duration={500} className="mx-4 cursor-pointer">Sobre</Link>
-                        <Link to="projetos" spy={true} smooth={true} offset={0} duration={500} className="mx-4 cursor-pointer">Projetos</Link>
+                        <Link to="projetos" spy={true} smooth={true} offset={-50} duration={500} className="mx-4 cursor-pointer">Projetos</Link>
                         <Link to="repositorio" spy={true} smooth={true} offset={0} duration={500} className="mx-4 cursor-pointer">Repositório</Link>
                         <Link to="habilidades" spy={true} smooth={true} offset={-100} duration={500} className="mx-4 cursor-pointer">Habilidades</Link>
                         <Link to="depoimentos" spy={true} smooth={true} offset={-100} duration={500} className="mx-4 cursor-pointer">Depoimentos</Link>
-                        <Link to="contato" spy={true} smooth={true} offset={10} duration={500} className="mx-4 sm:mr-32 cursor-pointer">Contato</Link>
+                        <Link to="contato" spy={true} smooth={true} offset={10} duration={500} className="mx-4 cursor-pointer sm:mr-96">Contato</Link>
                     </nav>
                 </div>
             </div>
+
             <img
                 src={LogoMatheus}
                 alt="Ícone do Menu"
-                className="h-10 w-10 ml-auto mr-4 block sm:hidden"
+                className="h-10 w-10 ml-auto mr-4 block xl:hidden"
                 onClick={toggleMenu}
             />
+
+
             {mostrarMenu && (
                 <div className="fixed top-1/3 right-0 max-h-screen overflow-auto flex justify-end items-center transition-opacity duration-500 ease-in-out">
                     <div className="bg-black opacity-90 p-6">

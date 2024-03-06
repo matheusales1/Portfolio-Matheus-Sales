@@ -29,11 +29,11 @@ const Projetos = () => {
 
         { link: "https://matheusalesdev.netlify.app/", linkRepositorio: "https://github.com/matheusales1/Portfolio-Matheus-Sales", projetoTitle: "Meu Portfolio", description: "Projeto criado para apresentar meus trabalhos e habilidades aos visitantes interessados em conhecer mais sobre mim.", imageSrc: portfolio },
 
-        { link: "/projeto-2", linkRepositorio: "#", projetoTitle: "To-do com categorias", description: "Projeto do cruso B7Web, desenvolvido com PHP e laravel. Tela de login/cadastro, criação de tarefas, edita tarefa, deleta tarefas e exclui tarefas.", imageSrc: todo },
+        { link: "/projeto-2", linkRepositorio: "#", projetoTitle: "To-do com categorias", description: "Projeto do curso B7Web, desenvolvido com PHP e laravel. Tela de login/cadastro, criação de tarefas, edita tarefa, deleta tarefas e exclui tarefas.", imageSrc: todo },
 
         { link: "/projeto-2", linkRepositorio: "https://github.com/matheusales1/memory-game", projetoTitle: "React Memoria", description: "Projeto do curso B7Web, desenvolvido com React e Typescript e estilizado com styled components.", imageSrc: "https://t.ctcdn.com.br/lvns56iaSMyHvyTur4JeYS_NYeY=/i606944.png" },
 
-        { link: "https://calcimcdev.netlify.app/", linkRepositorio: "https://github.com/matheusales1/react-calc-imc", projetoTitle: "Calculadora IMC", description: "Projeto do cruso B7Web, desenvolvido com React e Typescript. ", imageSrc: imc },
+        { link: "https://calcimcdev.netlify.app/", linkRepositorio: "https://github.com/matheusales1/react-calc-imc", projetoTitle: "Calculadora IMC", description: "Projeto do curso B7Web, desenvolvido com React e Typescript. ", imageSrc: imc },
         { link: "https://reactdespesas.netlify.app/", linkRepositorio: "https://github.com/matheusales1/react-despesas", projetoTitle: "Sistema de Finanças Pessoais", description: "Projeto do curso B7Web, desenvolvido com React e Typescript e estilizado com styled components", imageSrc: despesa },
 
         { link: "#", projetoTitle: "B7 Store", linkRepositorio: "#", description: "Em Andamento.", imageSrc: jodoDaVelha },
@@ -45,16 +45,16 @@ const Projetos = () => {
         { link: "https://climaapijs.netlify.app/", linkRepositorio: "https://github.com/matheusales1/ClimaApi", projetoTitle: "Clima Api", description: "Projeto desenvolvido no curso da B7Web.", imageSrc: clima },
     ];
     const showMoreProjects = () => {
-        setVisibleProjects(visibleProjects + 3); // Aumenta a quantidade de projetos a serem exibidos em 3
+        setVisibleProjects(visibleProjects + 10); // Aumenta a quantidade de projetos a serem exibidos em 3
     };
     const showLessProjects = () => {
-        setVisibleProjects(Math.max(visibleProjects - 3, 3)); // Reduz a quantidade de projetos a serem exibidos em 3, mas mantém no mínimo 3
+        setVisibleProjects(Math.max(visibleProjects - 10, 3)); // Reduz a quantidade de projetos a serem exibidos em 3, mas mantém no mínimo 3
     };
     return (
-        <div id="projetos" className="bg-slate-900 flex justify-center flex-col ">
-            <div className="   mx-auto text-center">
-                <h1 className="text-white  text-5xl font-bold mb-16 mt-32 text-center font-firaCode">meus <span className="font-bolder">projetos</span></h1>
-                <div className="grid grid-cols-1 xl:grid-cols-3 gap-6 md:grid-cols-2  mt-28  ">
+        <div id="projetos" className="bg-slate-900 flex justify-center items-center flex-col">
+            <div className="flex items-center justify-center text-center flex-col">
+                <h1 className="text-white text-5xl font-bold mt-16 m-2 text-center font-firaCode">meus <span className="font-bolder">projetos</span></h1>
+                <div className="grid grid-cols-1 xl:grid-cols-3 gap-6  mt-20">
                     {projects.slice(0, visibleProjects).map((project, index) => (
                         <UnitProjetos
                             key={index}
@@ -76,16 +76,14 @@ const Projetos = () => {
                         <Button text="VER MAIS" click={showMoreProjects} />
                     </div>
                 )}
-
             </div>
-            <div id="repositorio" className="bg-pageGit bg-cover bg-center w-full h-screen text-center mt-16 mb-14 flex flex-col  sm:flex-row">
-                <div className="sm:flex-1 w-full">
-                    <img className="sm:ml-20" src={mockup} alt="" />
+            <div id="repositorio" className="bg-pageGit bg-cover bg-center w-full text-center mt-16 mb-14 flex flex-col xl:flex-row">
+                <div className="sm:flex-1 w-full h-full">
+                    <img className="xl:ml-20" src={mockup} alt="" />
                 </div>
                 <div className="flex items-center justify-center flex-col flex-1">
-                    <h1 className="font-firaCode text-6xl  sm:mr-10">confira o meu <span className="font-bold">repositório</span></h1>
-
-                    <Link to="https://github.com/matheusales1" className="bg-slate-950 text-white p-3 rounded-xl mt-10 mb-40 font-bold"> VEJA NO GIT HUB</Link>
+                    <h1 className="font-firaCode text-4xl sm:text-6xl m-4 sm:mr-10 xl:mt-32">confira o meu <span className="font-bold">repositório</span></h1>
+                    <Link to="https://github.com/matheusales1" target="_blank" className="bg-slate-950 text-white p-2 rounded-xl mt-6 mb-40 sm:mb-60 font-bold "> VEJA NO GIT HUB</Link>
                 </div>
             </div>
         </div>

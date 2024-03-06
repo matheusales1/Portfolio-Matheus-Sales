@@ -34,7 +34,7 @@ export const Conhecimentos = () => {
     const [mensagem, setMensagem] = useState("Passe o cursor do mouse no card para ler");
     return (
         <div id="habilidades" className="bg-slate-900 w-auto flex flex-wrap justify-center items-center gap-4 p-4 flex-col text-white">
-            <h1 className="text-5xl font-bold mb-10 sm:mt-20 text-center text-white font-firaCode">conhecimentos</h1>
+            <h1 className="sm:text-5xl text-4xl font-bold mb-10 sm:mt-20 text-center text-white font-firaCode">conhecimentos</h1>
             <div className="text-transparent sm:text-gray-500 sm:text-xl">{mensagem}</div>
             <div className="p-4 m-4 grid grid-cols-2   xl:grid-cols-7 md:grid-cols-3 bg-slate-950">
                 {linguagens.map((linguagem, index) => (
@@ -46,7 +46,7 @@ export const Conhecimentos = () => {
                 ))}
             </div>
             <h1 className='text-xl'>Estudando com foco em back-end</h1>
-            <div className="p-4 m-4 grid grid-cols-2 xl:grid-cols-2 md:grid-cols-3 bg-slate-950">
+            <div className="p-4 m-4 grid grid-cols-2 xl:grid-cols-2 md:grid-cols-2 bg-slate-950">
                 {/* Map para renderizar os ícones de conhecimentos em back-end */}
                 {conhecimentosBackend.map((conhecimento, index) => (
                     <UnitConhecimentos
