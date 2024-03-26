@@ -12,6 +12,8 @@ import todo from "../../assets/CapasProjetos/todo.png";
 import clima from "../../assets/CapasProjetos/clima.png";
 import pizza from "../../assets/CapasProjetos/pizza.png";
 import quiz from "../../assets/CapasProjetos/quiz.png";
+import b7store from "../../assets/CapasProjetos/capa-b7store.png";
+import memoria from "../../assets/CapasProjetos/memoria.png";
 
 
 interface Project {
@@ -29,19 +31,23 @@ const Projetos = () => {
 
         { link: "https://matheusalesdev.netlify.app/", linkRepositorio: "https://github.com/matheusales1/Portfolio-Matheus-Sales", projetoTitle: "Meu Portfolio", description: "Projeto criado para apresentar meus trabalhos e habilidades aos visitantes interessados em conhecer mais sobre mim.", imageSrc: portfolio },
 
-        { link: "/projeto-2", linkRepositorio: "#", projetoTitle: "To-do com categorias", description: "Projeto do curso B7Web, desenvolvido com PHP e laravel. Tela de login/cadastro, criação de tarefas, edita tarefa, deleta tarefas e exclui tarefas.", imageSrc: todo },
-
-        { link: "/projeto-2", linkRepositorio: "https://github.com/matheusales1/memory-game", projetoTitle: "React Memoria", description: "Projeto do curso B7Web, desenvolvido com React e Typescript e estilizado com styled components.", imageSrc: "https://t.ctcdn.com.br/lvns56iaSMyHvyTur4JeYS_NYeY=/i606944.png" },
-
         { link: "https://calcimcdev.netlify.app/", linkRepositorio: "https://github.com/matheusales1/react-calc-imc", projetoTitle: "Calculadora IMC", description: "Projeto do curso B7Web, desenvolvido com React e Typescript. ", imageSrc: imc },
+
         { link: "https://reactdespesas.netlify.app/", linkRepositorio: "https://github.com/matheusales1/react-despesas", projetoTitle: "Sistema de Finanças Pessoais", description: "Projeto do curso B7Web, desenvolvido com React e Typescript e estilizado com styled components", imageSrc: despesa },
 
-        { link: "#", projetoTitle: "B7 Store", linkRepositorio: "#", description: "Em Andamento.", imageSrc: jodoDaVelha },
+        { link: "#", projetoTitle: "B7 Store", linkRepositorio: "#", description: "Em Andamento.", imageSrc: b7store },
+
+        { link: "https://pizzajs1.netlify.app/", linkRepositorio: "https://github.com/matheusales1/Projeto-Pizza-Js", projetoTitle: "Pizza JavaScript", description: "Projeto desenvolvido no curso da B7Web.", imageSrc: pizza },
+
+        { link: "/projeto-2", linkRepositorio: "#", projetoTitle: "To-do com categorias", description: "Projeto do curso B7Web, desenvolvido com PHP e laravel. Tela de login/cadastro, criação de tarefas, edita tarefa, deleta tarefas e exclui tarefas.", imageSrc: todo },
+
+        { link: "/projeto-2", linkRepositorio: "https://github.com/matheusales1/memory-game", projetoTitle: "React Memoria", description: "Projeto do curso B7Web, desenvolvido com React e Typescript e estilizado com styled components.", imageSrc: memoria },
+
 
         { link: "https://animated-babka-038e9b.netlify.app/", linkRepositorio: "https://github.com/matheusales1/jogo-da-velha", projetoTitle: "Jogo da velha", description: "O jogo da velha é um jogo ou passatempo popular. É um jogo de regras extremamente simples, que não traz grandes dificuldades para seus jogadores e é facilmente aprendido.", imageSrc: jodoDaVelha },
 
         { link: "https://quizrespostajs.netlify.app/", linkRepositorio: "https://github.com/matheusales1/QuizJs", projetoTitle: "Quiz JavaScript", description: "Projeto desenvolvido no curso da B7Web.", imageSrc: quiz },
-        { link: "https://pizzajs1.netlify.app/", linkRepositorio: "https://github.com/matheusales1/Projeto-Pizza-Js", projetoTitle: "Pizza JavaScript", description: "Projeto desenvolvido no curso da B7Web.", imageSrc: pizza },
+
         { link: "https://climaapijs.netlify.app/", linkRepositorio: "https://github.com/matheusales1/ClimaApi", projetoTitle: "Clima Api", description: "Projeto desenvolvido no curso da B7Web.", imageSrc: clima },
     ];
     const showMoreProjects = () => {

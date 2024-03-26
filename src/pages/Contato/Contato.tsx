@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 export const Contato = () => {
     const redesSociais = [
-        { link: "https://www.linkedin.com/in/matheusales/", img: Linkedin, text: "/matheusales" },
+        { link: "https://www.linkedin.com/in/matheus-sales-dev/", img: Linkedin, text: "/matheus-sales-dev" },
         { link: "mailto:matheusalesbr@gmail.com", img: Email, text: "matheusalesbr@gmail.com" },
         { link: "https://www.instagram.com/matdesales/", img: Instagram, text: "matdesales" },
         { link: "https://wa.me/5583996228865", img: WhatsApp, text: "(83) 99622-8865" },

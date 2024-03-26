@@ -5,7 +5,7 @@ import WhatsApp from "../../assets/RedesSociais/icons8-whatsapp.svg"
 import Instagram from "../../assets/RedesSociais/icons8-instagram.svg"
 import Email from "../../assets/RedesSociais/icons8-email-50.png"
 
-import Perfil from "../../assets/mat.jfif"
+import Perfil from "../../assets/02-matheus.jpg"
 import LogoMatheus from "../../assets/LOGO MATHEUS.png"
 
 export const Main = () => {

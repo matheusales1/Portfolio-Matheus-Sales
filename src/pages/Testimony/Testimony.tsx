@@ -3,16 +3,16 @@ import { PerfilComment } from '../../components/PerfilComment';
 export const Testimony = () => {
     const depoimentos = [
         {
-            comment: `"Se o tamanho do seu slider está maior do que o esperado, pode ser devido às classes ou ao estilo CSS aplicado aos elementos dentro do slider. Verifique se há alguma classe que está configurando o tamanho dos elementos de forma inadequada."`,
-            imagePerfil: "https://media.licdn.com/dms/image/D4D03AQG9TcCfEGTIqA/profile-displayphoto-shrink_800_800/0/1704897459851?e=1710979200&v=beta&t=DtW4pXioRH-md9P1w7l4gOKNUOiedqMwrX2E8UfXZgI",
+            comment: `"Um profissional de extrema responsabilidade e comprometimento. Não tive preocupações com atrasos e tudo foi entregue com bastante cuidado nos detalhes. Atende bem a todas as solicitações feitas, muito prestativo."`,
+            imagePerfil: "https://media.licdn.com/dms/image/D4D03AQG9TcCfEGTIqA/profile-displayphoto-shrink_800_800/0/1704897459851?e=1717027200&v=beta&t=LiwxmQahMWuswkl39A17fLl50mG0AktmWts2TcV1M6I",
             name: "Emily G Melo",
             job: "Social Media"
         },
         {
             comment: '"Um execelente profissional super dedicado e atencioso tem facilidade em aprender coisas novas e esta sempre se dedicando e fazendo perguntas para melhor forma de trabalho."',
-            imagePerfil: "https://media.licdn.com/dms/image/D4E03AQHq88Ws1ZENmA/profile-displayphoto-shrink_800_800/0/1690583228815?e=1710979200&v=beta&t=O693E-kTk0iz7sk3r4u9o_uvDaqQdBFmQd-m8CFdgns",
+            imagePerfil: "https://media.licdn.com/dms/image/D4E03AQHq88Ws1ZENmA/profile-displayphoto-shrink_800_800/0/1690583228815?e=1717027200&v=beta&t=pYLG7G6b-PHVb0B1CkfgU0OFFzuXbHEQx2cgREncqbk",
             name: "Matthaus Nawan",
-            job: "Desenvolvedor Pleno"
+            job: "Desenvolvedor Senior"
         },
     ];
 
