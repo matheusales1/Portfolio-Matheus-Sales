@@ -4,13 +4,13 @@ export const Testimony = () => {
     const depoimentos = [
         {
             comment: `"Um profissional de extrema responsabilidade e comprometimento. Não tive preocupações com atrasos e tudo foi entregue com bastante cuidado nos detalhes. Atende bem a todas as solicitações feitas, muito prestativo."`,
-            imagePerfil: "https://media.licdn.com/dms/image/D4D03AQG9TcCfEGTIqA/profile-displayphoto-shrink_800_800/0/1704897459851?e=1717027200&v=beta&t=LiwxmQahMWuswkl39A17fLl50mG0AktmWts2TcV1M6I",
+            imagePerfil: "https://media.licdn.com/dms/image/D4D03AQG9TcCfEGTIqA/profile-displayphoto-shrink_800_800/0/1704897459851?e=1726099200&v=beta&t=S6fMvr6cfVqIw2aGrQKadbIjJc7eXM_d7vLP4K6JWR0",
             name: "Emily G Melo",
             job: "Social Media"
         },
         {
             comment: '"Um execelente profissional super dedicado e atencioso tem facilidade em aprender coisas novas e esta sempre se dedicando e fazendo perguntas para melhor forma de trabalho."',
-            imagePerfil: "https://media.licdn.com/dms/image/D4E03AQHq88Ws1ZENmA/profile-displayphoto-shrink_800_800/0/1690583228815?e=1717027200&v=beta&t=pYLG7G6b-PHVb0B1CkfgU0OFFzuXbHEQx2cgREncqbk",
+            imagePerfil: "https://media.licdn.com/dms/image/D4E03AQHq88Ws1ZENmA/profile-displayphoto-shrink_200_200/0/1690583228815?e=1726099200&v=beta&t=M0mgCcCZr-6trQITSdIw2K7V3WCwe5xW4-brykd6lJU",
             name: "Matthaus Nawan",
             job: "Desenvolvedor Senior"
         },

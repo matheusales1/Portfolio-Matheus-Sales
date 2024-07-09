@@ -27,7 +27,7 @@ interface Project {
 const Projetos = () => {
     const [visibleProjects, setVisibleProjects] = useState(3);
     const projects: Project[] = [
-        { link: "https://encurtador.com.br/covE9", projetoTitle: "Se7 Vôlei de Praia", description: "Projeto freelancer desenvolvido com React e TypeScript. Formulario de cadastro com multietapas, portal do aluno, pagina do professor com tiragem de faltas.", imageSrc: se7Volei },
+        { link: "https://matricula.se7voleidepraia.com.br/matricula-online", projetoTitle: "Se7 Vôlei de Praia", description: "Projeto freelancer desenvolvido com React e TypeScript. Formulario de cadastro com multietapas, portal do aluno, pagina do professor com tiragem de faltas.", imageSrc: se7Volei },
 
         { link: "https://matheusalesdev.netlify.app/", linkRepositorio: "https://github.com/matheusales1/Portfolio-Matheus-Sales", projetoTitle: "Meu Portfolio", description: "Projeto criado para apresentar meus trabalhos e habilidades aos visitantes interessados em conhecer mais sobre mim.", imageSrc: portfolio },
 
